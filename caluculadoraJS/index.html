@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de carga</title>
+</head>
+<body>
+<!--
+    Esta é uma tabela de HTML com elementos <input> que permite ao usuário inserir dados e elementos <span> nos quais o programa pode ixibir seus resultados. Esses elementos têm identificadores como "interest" e "years". Essas identificações são usadas no código JavaScript que apos a tabela. Note que alguns dos elementos de entrada definem rotinas de tratamento de evento "onchange" ou "onclick". Elas especificam strings de código JavaScript a ser executado quando o cliente insere dados ou dá um clique.
+-->
+<table>
+    <tr><th>Insira os dados do empréstimo:</th>
+        <td></td>
+        <th>Saldo do empréstimo, capital acumulado e pagamentos de juros</th></tr>
+    <tr><td>Valor do empréstimo ($):</td>
+        <td><input id="amount" onchange="calculate();"></td>
+        <td rowspan="8">
+            <canvas id="graph" width="400" height="250"></canvas></td></tr>
+    <tr><td>Juro anual (%):</td>
+        <td><input id="apr"  onchange="calculate()";></td></tr>
+    <tr><td>Período de reembolso (anos):</td>
+        <td><input id="years" onchange="calculate();"> </td>   
+    <tr><td>CEP (para encontrar credores):</td>
+        <td><input id="zipcode" onchange="calculate();"></td>
+    <tr><th>Pagamentos Aproximados:</th>
+        <td><button onclick="calculate();">Calcular</button></td></tr> 
+    <tr><td>Pagamento mensal:</td>
+        <td>$ <span class="output" id="total"></span> </td></tr>
+    <tr><td>Total Interest:</td>
+        <td>$<span class="output" id="totalinterest"></span></td></tr>
+    <tr><th>patrocinadores:</th><td calspan=2> 
+        Solicite seu empréstimo com um desses credores:
+        <div id="lenders"></div></td></tr> 
+</table>
+    <script src="javascript.js"></script>
+</body>
+</html>

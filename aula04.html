@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento DOM</title>
+    <style>
+    body {
+        background: rgb(120, 120, 232);
+        font: normal 14pt Arial;
+    } 
+    </style>
+</head>
+<body>
+    <h1> Aprendendo <strong>DOM</strong> </h1>
+    <p> Vamos para cima</p>
+    <p id="msg">Aprendendo <strong>DOM</strong> com Curso em Video</p>
+
+    <div> 
+        </h2 name="msg">Clique em mim</h2>
+    
+    </div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('h1')[0]
+        /*var d = window.document.getElementById('msg')
+        window.document.write(p1.innerHTML)
+        d.style.background = 'blue'
+        d.innerText = 'Estou aguardando...'*/
+        var fe = window.document.querySelector('p#msg')
+        fe.style.color = 'Blue'
+
+    </script>
+</body>
+</html>

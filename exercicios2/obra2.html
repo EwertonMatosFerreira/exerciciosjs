@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confira a idade!</title>
+    <link rel="stylesheet" href="obra2.css">
+</head>
+<body>
+    <header>
+        <h1>Descubra a idade!</h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento.
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p> Sexo:
+                <input type="radio" name="sex" id="sexmsc" checked>
+                <label for="sexmsc">Masculino</label>
+                <input type="radio" name="sex" id="secfem">
+                <label for="sexfem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <img src="mulher.jpg" id="fotos">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; EwertonMatos</p>
+    </footer>
+
+
+    <script src="obra2.js"></script>
+</body>
+</html>

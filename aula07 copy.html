@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra-se</title>
+</head>
+<body>
+   <h1>Brasileiro ou Estrangeiro?</h1>
+   Qual o seu país? <input type="text" placeholder="Digite seu país!" name="campo-nome" id="campo_nome" required>
+    <input type="button" value="Conferir" onclick="verificar()">
+    <div id="res"></div>
+    <script src="aula07_copy.js"></script>
+     <!--<h1>Sistema de Verificação de Cidadania Brasileira.</h1>
+
+    <p>Digite em qual país você nasceu?</p>
+    <input type="text" name="paísDigitado" id="paísDigitado">
+    <input type="button" value="Verificar" onclick="cidadania()" id="button">
+    <div id="resultado"><p>Resultado: </p></div>
+    
+    <script>
+
+        function cidadania() {
+            var nomePaís = document.querySelector('input#paísDigitado')// esta var recebe país digitado no input;
+            var resultado = document.querySelector('div#resultado')// esta var recebe a div resultado que o texto irá ser substituído pelo innerHTML;
+            var país = (nomePaís.value).toUpperCase() // esta var recebe o valor da var nomePaís, transforma em maíuscula para ser reconhecida abaixo com o if e o innerHTML fazer a interpolação.
+
+            if (país != 'BRASIL'){
+                resultado.innerHTML = `Se o seu País de origem é <strong>${país.toUpperCase()}</strong>, você é Estrangeiro.` 
+            } else {
+                resultado.innerHTML = `Você nasceu no <strong>${país.toUpperCase()}</strong>, parabéns! Você é Brasileiro.`
+            }
+        }
+    </script>-->
+</body>
+</html>
